@@ -48,3 +48,10 @@ Thumbs.db
 *.mov
 *.wmv
 
+# Autogenerados por ANTLR
+*.tokens
+*Parser.py
+*Lexer.py
+*Listener.py
+*Visitor.py
+.antlr/
