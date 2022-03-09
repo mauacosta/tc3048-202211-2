@@ -1,5 +1,4 @@
-grammar Marzo;
-
+grammar marzo;
 
 program : expression+ ;
 
@@ -8,10 +7,9 @@ expression:
     | Numero                  #primaria
     ;
 
-// A continuación los tokens (comienzan con mayúscula)
 
+// A continuación los tokens (comienzan con mayúscula)
 Numero : [0-9]+;
 WS : [ \t\n\r]+ -> skip ;
-
 
 
