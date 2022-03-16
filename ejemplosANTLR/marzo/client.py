@@ -14,6 +14,8 @@ def main():
     walker = ParseTreeWalker()
     walker.walk(gencode, tree)
 
+    with open('test.asm', "w") as writer:
+        writer.write(gencode.r)
 
 if __name__ == '__main__':
     main()
