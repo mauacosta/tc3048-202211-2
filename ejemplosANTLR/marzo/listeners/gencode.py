@@ -26,3 +26,4 @@ class GenCode(marzoListener):
                 right=self.stack.pop(), 
                 left=self.stack.pop())
                 )
+    

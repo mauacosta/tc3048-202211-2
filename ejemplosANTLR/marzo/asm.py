@@ -1,8 +1,13 @@
 from string import Template
 
-tpl_start = """
+tpl_start_text = """
     .text
-main:
+main: 
+"""
+
+tpl_start_data = """
+    .data
+$varname: .word 0
 """
 
 tpl_end = """
@@ -46,3 +51,11 @@ li $v0, 4
 la $a0, msg
 syscall
 """
+
+tpl_var = Template("""
+    lw  $$a0, $name
+""")
+
+tpl_asignacion = Template("""
+    sw  $$a0  $name
+""")
